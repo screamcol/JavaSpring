@@ -33,21 +33,20 @@ public class ProductController {
     }
 
     @PostMapping("/add")
-    public String saveNewStudent(@ModelAttribute Product product) {
-//        Product product = new Product(productId, productName, productCost);
+    public String saveNewProduct(@ModelAttribute Product product) {
         productService.saveOrUpdateProduct(product);
-        return "redirect:/all_products";
+        return "redirect:/products";
     }
 
     @GetMapping("/edit/{id}")
     public String showEditForm(@PathVariable Long id, Model model) {
         model.addAttribute("product", productService.findById(id));
-        return "edit_student_form";
+        return "edit_product_form";
     }
 
     @PostMapping("/edit")
-    public String modifyStudent(@ModelAttribute Product modifiedStudent) {
-        productService.saveOrUpdateProduct(modifiedStudent);
-        return "redirect:/students/";
+    public String modifyProduct(@ModelAttribute Product modifiedProduct) {
+        productService.saveOrUpdateProduct(modifiedProduct);
+        return "redirect:/products";
     }
 }

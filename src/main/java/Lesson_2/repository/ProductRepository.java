@@ -34,10 +34,10 @@ public class ProductRepository {
         return product;
     }
 
-    public Product addProduct(Product product) {
-        products.add(product);
-        return product;
-    }
+//    public Product addProduct(Product product) {
+//        products.add(product);
+//        return product;
+//    }
 
     public Product saveOrUpdateProduct(Product product) {
         if (product.getId() == null) {

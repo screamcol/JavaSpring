@@ -7,6 +7,10 @@ public class Product {
     private int cost;
 
 
+    public Product() {
+
+    }
+
     public Product(Long id) {
         this.id = id;
     }

@@ -20,12 +20,12 @@ public class ProductService {
         return productRepository.getAllProduct();
     }
 
-    public Product addNewProduct(Product product) {
-        return productRepository.addProduct(product);
-    }
+//    public Product addNewProduct(Product product) {
+//        return productRepository.addProduct(product);
+//    }
 
-    public Product saveOrUpdateProduct(Product student) {
-        return productRepository.saveOrUpdateProduct(student);
+    public Product saveOrUpdateProduct(Product product) {
+        return productRepository.saveOrUpdateProduct(product);
     }
 
     public Product findById(Long id) {
