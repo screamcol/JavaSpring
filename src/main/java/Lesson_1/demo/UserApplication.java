@@ -7,7 +7,6 @@ public class UserApplication {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(UserApplicationConfig.class);
         UserService userService = context.getBean("userService", UserService.class);
         userService.printAllUsers();
-        userService.setD(15);
 
         Box box1 = context.getBean("box", Box.class);
         Box box2 = context.getBean("box", Box.class);
