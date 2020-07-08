@@ -20,10 +20,6 @@ public class ProductService {
         return productRepository.getAllProduct();
     }
 
-//    public Product addNewProduct(Product product) {
-//        return productRepository.addProduct(product);
-//    }
-
     public Product saveOrUpdateProduct(Product product) {
         return productRepository.saveOrUpdateProduct(product);
     }
