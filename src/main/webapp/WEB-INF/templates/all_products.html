@@ -4,17 +4,28 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Lesson2</title>
+    <title>Lesson4</title>
 </head>
 
 <body>
     <h1>Список товаров:</h1>
     <table>
         <thead>
+        <tr >
+        <form>
+            <label>Отфильтровать по: </label>
+            <select id="sort">
+                <option name="by_min_price">минимальной цене</option>
+                <option name="by_max_price">максимальной цене</option>
+                <option name="by_min_max_price">минимальной и максимальной цене</option>
+            </select>
+            <input type="submit">
+        </form>
         <tr>
             <td>Id</td>
             <td>Имя</td>
             <td>Цена</td>
+            <td>Операция</td>
         </tr>
         </thead>
         <tbody>

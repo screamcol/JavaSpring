@@ -1,7 +1,6 @@
 package Lesson_3.customer;
 
 import Lesson_3.product.Product;
-import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.List;

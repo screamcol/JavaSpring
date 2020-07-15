@@ -48,7 +48,7 @@ public class ProductRepository {
                 }
             }
         }
-        throw new RuntimeException("What???");
+        throw new RuntimeException("Error occurred during save and update");
     }
 
     public Product findById(Long id) {
@@ -57,7 +57,7 @@ public class ProductRepository {
                 return s;
             }
         }
-        throw new RuntimeException("Student not found");
+        throw new RuntimeException("Product not found");
     }
 
 }
