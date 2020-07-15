@@ -19,7 +19,6 @@ public class Product {
 
 
     public Product() {
-
     }
 
     public Product(Long id) {

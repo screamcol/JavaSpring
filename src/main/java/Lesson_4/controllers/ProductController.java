@@ -20,13 +20,6 @@ public class ProductController {
     }
 
     // http://localhost:8989/app
-//    @GetMapping
-//    public String showAllProducts(Model model) {
-//        List<Product> products = productService.getAllProducts();
-//        model.addAttribute("products", products);
-//        return "all_products";
-//    }
-
     @GetMapping
     public String showAllProductsPageByPage(Model model, @RequestParam(name = "p", defaultValue = "1") Integer pageNumber) {
         if (pageNumber < 1) {
